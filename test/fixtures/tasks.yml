@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  completed: 2019-10-14 10:53:21
+  user: one
+
+two:
+  title: MyString
+  completed: 2019-10-14 10:53:21
+  user: two
