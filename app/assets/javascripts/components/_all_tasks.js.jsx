@@ -1,18 +1,6 @@
-class AllTasks extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      tasks: []
-    };
-  }
+const AllTasks = (props) => {
 
-  componentDidMount(){
-    fetch('/tasks.json')
-      .then((response) => {return response.json()})
-      .then((data) => {this.setState({ tasks: data }) });
-  }
-  render() {
-    var tasks = this.state.tasks.map((task) => {
+var tasks = props.tasks.map((task) => {
     return(
       <div key={task.id}>
         <p>{task.title}</p>
@@ -26,6 +14,5 @@ class AllTasks extends React.Component {
       {tasks}
     </div>
   )
-  }
 }
 
